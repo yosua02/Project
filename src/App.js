@@ -1,14 +1,15 @@
 import './App.css';
+import TodoRowItem from './components/TodoRowItem';
 
 function App() {
   return (
-    <div>
-      <div>
-        <div>
+    <div className='mt-5 container'>
+      <div className='card'>
+        <div className='card-header'>
           Your Todo's
         </div>
-        <div>
-          <table>
+        <div className='card-body'>
+          <table className='table table-hover'> 
             <thead>
               <tr>
                 <th scope='col'>#</th>
@@ -17,13 +18,9 @@ function App() {
               </tr>
             </thead>
             <tbody>
+             <TodoRowItem/>
               <tr>
-                <th scope='row'>1</th>
-                <td>Feed dog</td>
-                <td>Eric</td>
-              </tr>
-              <tr>
-                <th scope='col'>2</th>
+                <th scope='row'>2</th>
                 <td>Get haricut</td>
                 <td>Eric</td>
               </tr>
